@@ -3988,8 +3988,8 @@ var DomHeaderMenus_component = normalizeComponent(
 )
 
 /* harmony default export */ var DomHeaderMenus = (DomHeaderMenus_component.exports);
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/DomHeaderTop.vue?vue&type=template&id=b886a7d2&
-var DomHeaderTopvue_type_template_id_b886a7d2_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/DomHeaderTop.vue?vue&type=template&id=71531719&
+var DomHeaderTopvue_type_template_id_71531719_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
@@ -4094,7 +4094,7 @@ var DomHeaderTopvue_type_template_id_b886a7d2_render = function render() {
     }
   })], 1)], 1)]);
 };
-var DomHeaderTopvue_type_template_id_b886a7d2_staticRenderFns = [];
+var DomHeaderTopvue_type_template_id_71531719_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./src/services/httpClient.js
 
@@ -6753,6 +6753,14 @@ var DomHeaderLogo_component = normalizeComponent(
           this.comparisonCount = this.getLocalSavedHousingCount("comparisons");
         }
       }
+    },
+    profile: {
+      deep: true,
+      handler() {
+        this.favoriteCount = 0;
+        this.comparisonCount = 0;
+        this.notificationIndicator = false;
+      }
     }
   },
   computed: {
@@ -6767,10 +6775,10 @@ var DomHeaderLogo_component = normalizeComponent(
       return store_0.state.profile;
     },
     currentURL() {
-      return `${window.location.origin}/`;
+      return `${window.location.origin}`;
     },
     authUrl() {
-      return `https://staging.dom.kz/login?destination=${this.currentURL}`;
+      return `https://staging.dom.kz/login?destination=${this.currentURL}/`;
     },
     notificationUrl() {
       if (this.profile && this.profile.name) {
@@ -6811,10 +6819,10 @@ var DomHeaderLogo_component = normalizeComponent(
 });
 ;// CONCATENATED MODULE: ./src/components/DomHeaderTop.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_DomHeaderTopvue_type_script_lang_js_ = (DomHeaderTopvue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/DomHeaderTop.vue?vue&type=style&index=0&id=b886a7d2&prod&lang=scss&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-64.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-64.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-64.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-64.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/DomHeaderTop.vue?vue&type=style&index=0&id=71531719&prod&lang=scss&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/components/DomHeaderTop.vue?vue&type=style&index=0&id=b886a7d2&prod&lang=scss&
+;// CONCATENATED MODULE: ./src/components/DomHeaderTop.vue?vue&type=style&index=0&id=71531719&prod&lang=scss&
 
 ;// CONCATENATED MODULE: ./src/components/DomHeaderTop.vue
 
@@ -6827,8 +6835,8 @@ var DomHeaderLogo_component = normalizeComponent(
 
 var DomHeaderTop_component = normalizeComponent(
   components_DomHeaderTopvue_type_script_lang_js_,
-  DomHeaderTopvue_type_template_id_b886a7d2_render,
-  DomHeaderTopvue_type_template_id_b886a7d2_staticRenderFns,
+  DomHeaderTopvue_type_template_id_71531719_render,
+  DomHeaderTopvue_type_template_id_71531719_staticRenderFns,
   false,
   null,
   null,

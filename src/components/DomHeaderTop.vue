@@ -193,10 +193,10 @@ export default {
       return store.state.profile;
     },
     currentURL() {
-      return `${window.location.origin}/`;
+      return `${window.location.origin}`;
     },
     authUrl() {
-      return `https://staging.dom.kz/login?destination=${this.currentURL}`;
+      return `https://staging.dom.kz/login?destination=${this.currentURL}/`;
     },
     notificationUrl() {
       if (this.profile && this.profile.name) {
