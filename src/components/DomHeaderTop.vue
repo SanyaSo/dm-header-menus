@@ -2,7 +2,7 @@
   <div class="dom-header-top">
     <div class="dom-header-container dom-header-top__container">
       <div class="dom-header-top__logo">
-        <span>logo</span>
+        <a href="https://dom.kz"><img src="../assets/Logo.svg" alt="" /></a>
       </div>
       <div class="dom-header-top__user">
         <div class="dom-header-top__user-actions">
@@ -119,10 +119,6 @@ export default {
         return {};
       },
     },
-    destination: {
-      type: String,
-      default: "",
-    },
   },
   data() {
     return {
@@ -184,8 +180,11 @@ export default {
         return "Войти/Регистрация";
       }
     },
+    currentURL() {
+      return window.location.origin;
+    },
     authUrl() {
-      return `https://staging.dom.kz/login?destination=${this.destination}`;
+      return `https://staging.dom.kz/login?destination=${this.currentURL}`;
     },
     notificationUrl() {
       if (this.profile && this.profile.name) {
@@ -229,10 +228,25 @@ export default {
 <style lang="scss">
 .dom-header-top {
   background: #f7f7fa;
+
+  @media (max-width: 991px) {
+    background: #ffff;
+  }
+  &__logo {
+    width: 100px;
+    height: 40px;
+    object-fit: cover;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
   &__container {
     display: grid;
     grid-template-columns: 1fr 1.47fr;
-    padding: 8px 16px;
+    padding: 5px 16px;
   }
   a {
     color: #6e6e73;
@@ -272,6 +286,10 @@ export default {
         column-gap: 16px;
       }
     }
+  }
+  &__user-info {
+    display: flex;
+    align-items: center;
   }
 }
 </style>

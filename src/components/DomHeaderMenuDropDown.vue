@@ -99,7 +99,7 @@ export default {
     top: 100px;
     position: fixed;
     border-radius: 0;
-    z-index: 1;
+    z-index: 10;
   }
 }
 </style>

@@ -5,7 +5,6 @@
       :favoriteRemoved="favoriteRemoved"
       :comparisonAdded="comparisonAdded"
       :comparisonRemoved="comparisonRemoved"
-      :destination="destination"
     />
     <dom-header-bottom />
   </div>
@@ -42,15 +41,14 @@ export default {
         return {};
       },
     },
-    destination: {
-      type: String,
-      default: "",
-    },
   },
 };
 </script>
 
 <style>
+.dom-header {
+  border-bottom: 1px solid #f7f7fa;
+}
 .dom-header-container {
   max-width: 1200px;
   margin: 0 auto;

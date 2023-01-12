@@ -1,6 +1,6 @@
 <template>
   <div class="dom-header-menu-modal-user-name">
-    <span>{{ userName }}</span>
+    <a href="https://dom.kz/cp">{{ userName }}</a>
   </div>
 </template>
 
@@ -21,9 +21,10 @@ export default {
   border-bottom: 1px solid #f7f7fa;
   margin-bottom: 16px;
 
-  span {
+  a {
     color: #33333d;
     font-weight: 700;
+    text-decoration: none;
   }
 }
 </style>

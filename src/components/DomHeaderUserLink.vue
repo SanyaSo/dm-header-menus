@@ -47,6 +47,8 @@ export default {
 .dom-header-user-link {
   text-decoration: none;
   color: #6e6e73;
+  display: flex;
+  align-items: center;
 
   a {
     display: flex;
@@ -67,8 +69,8 @@ export default {
     font-weight: 700;
   }
   &__indicator {
-    width: 17px;
-    height: 17px;
+    width: 20px;
+    height: 20px;
     font-weight: 400;
     font-style: normal;
     display: flex;
@@ -87,10 +89,11 @@ export default {
     border-radius: 50%;
 
     &--small {
-      width: 8px !important;
-      height: 8px !important;
+      width: 9px !important;
+      height: 9px !important;
       right: 3px;
       top: -4px;
+      border: 1px solid #fff;
     }
   }
   &__icon-box {
