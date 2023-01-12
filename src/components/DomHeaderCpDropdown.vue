@@ -95,6 +95,7 @@ export default {
     position: absolute;
     top: 30px;
     left: -276px;
+    z-index: 100;
   }
 
   &__triger {
