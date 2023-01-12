@@ -1,4 +1,4 @@
-import DmHeaderMenus from "./components/DomHeaderMenus.vue";
+import DmHeaderMenus from "./components/DomHeader.vue";
 
 const plugin = {
   install(Vue) {

@@ -1,16 +1,14 @@
 <template>
   <div id="app">
-    <dom-header-bottom />
-    <dom-header-mobile-menu />
+    <dom-header />
   </div>
 </template>
 
 <script>
-import DomHeaderBottom from "./components/DomHeaderMenus.vue";
-import DomHeaderMobileMenu from "./components/DomHeaderMobileMenu.vue";
+import DomHeader from "./components/DomHeader.vue";
 
 export default {
-  components: { DomHeaderBottom, DomHeaderMobileMenu },
+  components: { DomHeader },
   name: "App",
 };
 </script>

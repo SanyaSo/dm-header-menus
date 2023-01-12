@@ -15,7 +15,7 @@ import DomHeaderMenuLink from "./DomHeaderMenuLink.vue";
 import axios from "axios";
 export default {
   components: { DomHeaderMenuDropDown, DomHeaderMenuLink },
-  name: "dm-header-menus",
+  name: "dm-header",
   data() {
     return {
       menus: [],

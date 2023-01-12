@@ -1,0 +1,14 @@
+
+.icon-fire-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
+.icon-clear { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe816;&nbsp;'); }
+.icon-heart_outlined { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe82d;&nbsp;'); }
+.icon-add_circle_outlined { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe879;&nbsp;'); }
+.icon-notifications_outlined { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe885;&nbsp;'); }
+.icon-arrow_forward { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe892;&nbsp;'); }
+.icon-chevron_down { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe8a9;&nbsp;'); }
+.icon-file_text_outlined { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe963;&nbsp;'); }
+.icon-menu_left_right { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeb19;&nbsp;'); }
+.icon-settings_outlined { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeb20;&nbsp;'); }
+.icon-sign_out { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeb27;&nbsp;'); }
+.icon-format_points { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeb56;&nbsp;'); }
+.icon-comparison { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xebe5;&nbsp;'); }
