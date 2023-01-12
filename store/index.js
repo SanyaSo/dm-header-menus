@@ -6,21 +6,25 @@ Vue.use(Vuex);
 const store = new Vuex.Store({
   state: {
     profile: null,
+    logout: null,
   },
   mutations: {
     setProfile(state, profile) {
       state.profile = profile;
     },
+    setLogout(state, logout) {
+      state.logout = { dt: new Date(), logout: logout };
+    },
   },
   actions: {
-    updateProfile({ commit }) {
-      const profile = getUserInfo();
+    async updateProfile({ commit }) {
+      const profile = await getUserInfo();
+      console.log(profile);
       commit("setProfile", profile);
     },
     logout({ commit }) {
       localStorage.setItem("auth._token.local", false);
-      const profile = getUserInfo();
-      commit("setProfile", profile);
+      commit("setLogout", "logout");
     },
   },
 });

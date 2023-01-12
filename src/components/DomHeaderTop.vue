@@ -172,12 +172,13 @@ export default {
         }
       },
     },
-    profile: {
+    logout: {
       deep: true,
-      handler() {
+      async handler() {
         this.favoriteCount = 0;
         this.comparisonCount = 0;
         this.notificationIndicator = false;
+        await store.dispatch("updateProfile");
       },
     },
   },
@@ -191,6 +192,9 @@ export default {
     },
     profile() {
       return store.state.profile;
+    },
+    logout() {
+      return store.state.logout;
     },
     currentURL() {
       return `${window.location.origin}`;
@@ -207,8 +211,7 @@ export default {
     },
   },
   async mounted() {
-    console.log(this.currentURL);
-    store.dispatch("updateProfile");
+    await store.dispatch("updateProfile");
 
     if (this.profile && this.profile.name) {
       this.favoriteCount = await getUserFavoriteCount();
@@ -222,7 +225,6 @@ export default {
     const menus = await getMenus();
     this.menus = menus[0].menu.filter((el) => el.children.length);
     this.links = menus[0].menu.filter((el) => !el.children.length);
-    console.log("header top", this.menus);
   },
   methods: {
     openMenuModal() {

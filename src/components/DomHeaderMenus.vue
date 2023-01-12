@@ -26,7 +26,6 @@ export default {
     const menus = await this.getMenus();
     this.menus = menus[0].menu.filter((el) => el.children.length);
     this.links = menus[0].menu.filter((el) => !el.children.length);
-    console.log(this.menus);
   },
   methods: {
     async getMenus() {
