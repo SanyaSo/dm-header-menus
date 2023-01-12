@@ -20,11 +20,16 @@
         <span class="dom-header-cp-dropdown__icon" :class="item.icon"></span>
         <span class="dom-header-cp-dropdown__title">{{ item.title }}</span>
       </a>
+      <span @click="logout" class="dom-header-cp-dropdown__item">
+        <span class="dom-header-cp-dropdown__icon icon-sign_out"></span>
+        <span class="dom-header-cp-dropdown__title">Выйти из аккаунта</span>
+      </span>
     </div>
   </div>
 </template>
 
 <script>
+import store from "../../store";
 export default {
   props: {
     userName: {
@@ -69,6 +74,11 @@ export default {
       visible: false,
     };
   },
+  methods: {
+    logout() {
+      store.dispatch("logout");
+    },
+  },
 };
 </script>
 
@@ -100,6 +110,8 @@ export default {
     padding: 16px;
     column-gap: 8px;
     text-decoration: none;
+    border-bottom: 1px solid #f7f7fa;
+    cursor: pointer;
   }
   &__icon {
     font-size: 20px;

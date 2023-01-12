@@ -76,7 +76,6 @@
 import getUserFavoriteCount from "../services/FavoriteService";
 import getUserComparisonCount from "../services/ComparisonService";
 import userHasNotification from "../services/NotificationService";
-import getUserInfo from "../services/UserService";
 import getMenus from "../services/WebSiteService";
 import DomHeaderUserLink from "./DomHeaderUserLink.vue";
 import DomHeaderMenuModal from "./domHeaderMenuModal/DomHeaderMenuModal.vue";
@@ -85,6 +84,7 @@ import DomHeaderMenuModalList from "./domHeaderMenuModal/DomHeaderMenuModalList.
 import DomHeaderMenuModalLinkList from "./domHeaderMenuModal/DomHeaderMenuModalLinkList.vue";
 import DomHeaderCpDropdown from "./DomHeaderCpDropdown.vue";
 import DomHeaderLogo from "./DomHeaderLogo.vue";
+import store from "../../store";
 
 export default {
   components: {
@@ -127,7 +127,6 @@ export default {
       favoriteCount: 0,
       comparisonCount: 0,
       notificationIndicator: false,
-      profile: null,
       menus: [],
       links: [],
     };
@@ -173,6 +172,14 @@ export default {
         }
       },
     },
+    profile: {
+      deep: true,
+      handler() {
+        this.favoriteCount = 0;
+        this.comparisonCount = 0;
+        this.notificationIndicator = false;
+      },
+    },
   },
   computed: {
     userName() {
@@ -182,8 +189,11 @@ export default {
         return "Войти/Регистрация";
       }
     },
+    profile() {
+      return store.state.profile;
+    },
     currentURL() {
-      return window.location.origin;
+      return `${window.location.origin}/`;
     },
     authUrl() {
       return `https://staging.dom.kz/login?destination=${this.currentURL}`;
@@ -197,7 +207,8 @@ export default {
     },
   },
   async mounted() {
-    this.profile = await getUserInfo();
+    console.log(this.currentURL);
+    store.dispatch("updateProfile");
 
     if (this.profile && this.profile.name) {
       this.favoriteCount = await getUserFavoriteCount();
