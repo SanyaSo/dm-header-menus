@@ -2,7 +2,7 @@
   <div class="dom-header-top">
     <div class="dom-header-container dom-header-top__container">
       <div class="dom-header-top__logo">
-        <a href="https://dom.kz"><img src="../assets/Logo.svg" alt="" /></a>
+        <a href="https://dom.kz"><dom-header-logo /></a>
       </div>
       <div class="dom-header-top__user">
         <div class="dom-header-top__user-actions">
@@ -84,6 +84,7 @@ import DomHeaderMenuModalUserName from "./domHeaderMenuModal/DomHeaderMenuModalU
 import DomHeaderMenuModalList from "./domHeaderMenuModal/DomHeaderMenuModalList.vue";
 import DomHeaderMenuModalLinkList from "./domHeaderMenuModal/DomHeaderMenuModalLinkList.vue";
 import DomHeaderCpDropdown from "./DomHeaderCpDropdown.vue";
+import DomHeaderLogo from "./DomHeaderLogo.vue";
 
 export default {
   components: {
@@ -93,6 +94,7 @@ export default {
     DomHeaderMenuModalList,
     DomHeaderMenuModalLinkList,
     DomHeaderCpDropdown,
+    DomHeaderLogo,
   },
   props: {
     favoriteAdded: {
@@ -238,7 +240,7 @@ export default {
     object-fit: cover;
     cursor: pointer;
 
-    img {
+    svg {
       width: 100%;
       height: 100%;
     }

@@ -3399,14 +3399,6 @@ module.exports = {
   trim: trim
 };
 
-/***/ }),
-
-/***/ 3630:
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "img/Logo.cc7109d8.svg";
-
 /***/ })
 
 /******/ 	});
@@ -3978,15 +3970,21 @@ var DomHeaderMenus_component = normalizeComponent(
 )
 
 /* harmony default export */ var DomHeaderMenus = (DomHeaderMenus_component.exports);
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/DomHeaderTop.vue?vue&type=template&id=6f3aa8ec&
-var DomHeaderTopvue_type_template_id_6f3aa8ec_render = function render() {
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/DomHeaderTop.vue?vue&type=template&id=ddd263ec&
+var DomHeaderTopvue_type_template_id_ddd263ec_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
     staticClass: "dom-header-top"
   }, [_c('div', {
     staticClass: "dom-header-container dom-header-top__container"
-  }, [_vm._m(0), _c('div', {
+  }, [_c('div', {
+    staticClass: "dom-header-top__logo"
+  }, [_c('a', {
+    attrs: {
+      "href": "https://dom.kz"
+    }
+  }, [_c('dom-header-logo')], 1)]), _c('div', {
     staticClass: "dom-header-top__user"
   }, [_c('div', {
     staticClass: "dom-header-top__user-actions"
@@ -4078,24 +4076,7 @@ var DomHeaderTopvue_type_template_id_6f3aa8ec_render = function render() {
     }
   })], 1)], 1)]);
 };
-var DomHeaderTopvue_type_template_id_6f3aa8ec_staticRenderFns = [function () {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c('div', {
-    staticClass: "dom-header-top__logo"
-  }, [_c('a', {
-    attrs: {
-      "href": "https://dom.kz"
-    }
-  }, [_c('img', {
-    attrs: {
-      "src": __webpack_require__(3630),
-      "alt": ""
-    }
-  })])]);
-}];
-
-;// CONCATENATED MODULE: ./src/components/DomHeaderTop.vue?vue&type=template&id=6f3aa8ec&
+var DomHeaderTopvue_type_template_id_ddd263ec_staticRenderFns = [];
 
 ;// CONCATENATED MODULE: ./src/services/httpClient.js
 
@@ -4163,8 +4144,8 @@ function httpNotificationClient_authHeader() {
 
 async function userHasNotification() {
   try {
-    const data = await httpNotificationClient.get('/search?pageNum=1&pageSize=8');
-    return data.data.data.length;
+    const data = await httpNotificationClient.get("/search?pageNum=1&pageSize=8");
+    return data.data.data && data.data.data.length;
   } catch (err) {
     console.log(err);
   }
@@ -5388,7 +5369,111 @@ var DomHeaderCpDropdown_component = normalizeComponent(
 )
 
 /* harmony default export */ var DomHeaderCpDropdown = (DomHeaderCpDropdown_component.exports);
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/DomHeaderLogo.vue?vue&type=template&id=2e5d5414&
+var DomHeaderLogovue_type_template_id_2e5d5414_render = function render() {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('div', [_c('svg', {
+    attrs: {
+      "width": "109",
+      "height": "44",
+      "viewBox": "0 0 109 44",
+      "fill": "none",
+      "xmlns": "http://www.w3.org/2000/svg"
+    }
+  }, [_c('g', {
+    attrs: {
+      "clip-path": "url(#clip0)"
+    }
+  }, [_c('path', {
+    attrs: {
+      "d": "M13.2369 20.309V10.2642H17.8055V35.5509H13.3267V33.6756C12.2195 35.0422 10.5736 35.9898 8.22943 35.9898C3.55112 35.9998 0 32.1494 0 27.0422C0 21.935 3.55112 18.0846 8.2394 18.0846C10.5237 18.0846 12.1397 18.9824 13.2369 20.309ZM4.68828 27.0422C4.68828 29.6457 6.39402 31.7305 9.07731 31.7305C11.6908 31.7305 13.4663 29.7255 13.4663 27.0422C13.4663 24.3589 11.6908 22.3539 9.07731 22.3539C6.39402 22.3539 4.68828 24.4387 4.68828 27.0422Z",
+      "fill": "#5956E0"
+    }
+  }), _c('path', {
+    attrs: {
+      "d": "M38.5037 27.0423C38.5037 32.1695 34.5835 35.9999 29.2868 35.9999C24 35.9999 20.0997 32.1695 20.0997 27.0423C20.0997 21.9151 24 18.0847 29.2868 18.0847C34.5835 18.0847 38.5037 21.9151 38.5037 27.0423ZM24.7681 27.0423C24.7681 29.7954 26.7032 31.7306 29.2768 31.7306C31.8603 31.7306 33.8055 29.7954 33.8055 27.0423C33.8055 24.2892 31.8603 22.354 29.2768 22.354C26.6932 22.354 24.7681 24.2792 24.7681 27.0423Z",
+      "fill": "url(#paint0_linear)"
+    }
+  }), _c('path', {
+    attrs: {
+      "d": "M61.626 18.0847C59.3916 18.0847 57.1671 18.8428 55.8504 20.9974C54.7132 19.1919 52.6883 18.0847 50.2344 18.0847C48.7581 18.0847 47.3317 18.4638 46.1945 19.4513L31.8105 5.04731C30.424 3.66077 28.1696 3.6508 26.7731 5.04731L20.0798 11.7406V18.7231L29.2768 9.52611L40.7581 21.0074V35.551H45.3367V26.2244C45.3367 23.6608 46.9726 22.374 48.9377 22.374C51.0225 22.374 52.2594 23.7306 52.2594 26.1845V35.5411H56.8579V26.2144C56.8579 23.6508 58.4938 22.364 60.4589 22.364C62.5337 22.364 63.7806 23.7206 63.7806 26.1745V35.5311H68.3492V24.7181C68.3392 20.768 65.6359 18.0847 61.626 18.0847Z",
+      "fill": "#5956E0"
+    }
+  }), _c('path', {
+    attrs: {
+      "d": "M74.8529 33.8753C74.8529 35.0125 73.8853 35.99 72.7681 35.99C71.6509 35.99 70.6733 35.0125 70.6733 33.8753C70.6733 32.7581 71.6509 31.7905 72.7681 31.7905C73.8853 31.8005 74.8529 32.7581 74.8529 33.8753Z",
+      "fill": "#ABABB0"
+    }
+  }), _c('path', {
+    attrs: {
+      "d": "M80.1197 25.546H82.404L88.5985 18.8726H92.2195L84.7781 26.743L92.3292 35.5609H88.6983L82.394 28.1494H80.1297V35.5609H77.2668V10.2642H80.1297V25.546H80.1197Z",
+      "fill": "#ABABB0"
+    }
+  }), _c('path', {
+    attrs: {
+      "d": "M108.06 20.9676L97.7856 32.9576H108.219V35.5611H93.9751V33.4663L104.369 21.4863H94.2744V18.8728H108.06V20.9676Z",
+      "fill": "#ABABB0"
+    }
+  })]), _c('defs', [_c('linearGradient', {
+    attrs: {
+      "id": "paint0_linear",
+      "x1": "23.403",
+      "y1": "34.0579",
+      "x2": "35.1802",
+      "y2": "20.0223",
+      "gradientUnits": "userSpaceOnUse"
+    }
+  }, [_c('stop', {
+    attrs: {
+      "stop-color": "#B16729"
+    }
+  }), _c('stop', {
+    attrs: {
+      "offset": "1",
+      "stop-color": "#E5B122"
+    }
+  })], 1), _c('clipPath', {
+    attrs: {
+      "id": "clip0"
+    }
+  }, [_c('rect', {
+    attrs: {
+      "width": "108.219",
+      "height": "32",
+      "fill": "white",
+      "transform": "translate(0 4)"
+    }
+  })])], 1)])]);
+};
+var DomHeaderLogovue_type_template_id_2e5d5414_staticRenderFns = [];
+
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/DomHeaderLogo.vue?vue&type=script&lang=js&
+/* harmony default export */ var DomHeaderLogovue_type_script_lang_js_ = ({});
+;// CONCATENATED MODULE: ./src/components/DomHeaderLogo.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_DomHeaderLogovue_type_script_lang_js_ = (DomHeaderLogovue_type_script_lang_js_); 
+;// CONCATENATED MODULE: ./src/components/DomHeaderLogo.vue
+
+
+
+
+
+/* normalize component */
+;
+var DomHeaderLogo_component = normalizeComponent(
+  components_DomHeaderLogovue_type_script_lang_js_,
+  DomHeaderLogovue_type_template_id_2e5d5414_render,
+  DomHeaderLogovue_type_template_id_2e5d5414_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var DomHeaderLogo = (DomHeaderLogo_component.exports);
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/DomHeaderTop.vue?vue&type=script&lang=js&
+
 
 
 
@@ -5407,7 +5492,8 @@ var DomHeaderCpDropdown_component = normalizeComponent(
     DomHeaderMenuModalUserName: DomHeaderMenuModalUserName,
     DomHeaderMenuModalList: DomHeaderMenuModalList,
     DomHeaderMenuModalLinkList: DomHeaderMenuModalLinkList,
-    DomHeaderCpDropdown: DomHeaderCpDropdown
+    DomHeaderCpDropdown: DomHeaderCpDropdown,
+    DomHeaderLogo: DomHeaderLogo
   },
   props: {
     favoriteAdded: {
@@ -5539,10 +5625,10 @@ var DomHeaderCpDropdown_component = normalizeComponent(
 });
 ;// CONCATENATED MODULE: ./src/components/DomHeaderTop.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_DomHeaderTopvue_type_script_lang_js_ = (DomHeaderTopvue_type_script_lang_js_); 
-;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/DomHeaderTop.vue?vue&type=style&index=0&id=6f3aa8ec&prod&lang=scss&
+;// CONCATENATED MODULE: ./node_modules/mini-css-extract-plugin/dist/loader.js??clonedRuleSet-22.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-22.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-22.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-22.use[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/DomHeaderTop.vue?vue&type=style&index=0&id=ddd263ec&prod&lang=scss&
 // extracted by mini-css-extract-plugin
 
-;// CONCATENATED MODULE: ./src/components/DomHeaderTop.vue?vue&type=style&index=0&id=6f3aa8ec&prod&lang=scss&
+;// CONCATENATED MODULE: ./src/components/DomHeaderTop.vue?vue&type=style&index=0&id=ddd263ec&prod&lang=scss&
 
 ;// CONCATENATED MODULE: ./src/components/DomHeaderTop.vue
 
@@ -5555,8 +5641,8 @@ var DomHeaderCpDropdown_component = normalizeComponent(
 
 var DomHeaderTop_component = normalizeComponent(
   components_DomHeaderTopvue_type_script_lang_js_,
-  DomHeaderTopvue_type_template_id_6f3aa8ec_render,
-  DomHeaderTopvue_type_template_id_6f3aa8ec_staticRenderFns,
+  DomHeaderTopvue_type_template_id_ddd263ec_render,
+  DomHeaderTopvue_type_template_id_ddd263ec_staticRenderFns,
   false,
   null,
   null,
